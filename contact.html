@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHive</title>
+    <link rel="icon" href="./images/logo.png">
+    <!--Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--Emoji stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: black;
+        }
+
+        .contact-section {
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            max-width: 720px;
+            width: 100%;
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 16px;
+            color: #111827;
+        }
+
+        .contact-container p.description {
+            text-align: center;
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            padding: 13px 16px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus {
+            border-color: rgb(21, 21, 66);
+            box-shadow: 0 0 6px rgba(217, 70, 239, 0.3);
+            outline: none;
+        }
+
+        .contact-container button {
+            background-color: rgb(21, 21, 66);
+            color: white;
+            font-size: 16px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-container button:hover {
+            background-color: rgb(0, 0, 242);
+        }
+
+        .contact-details {
+            margin-top: 35px;
+            text-align: center;
+            color: #444;
+        }
+
+        .contact-details p {
+            margin: 6px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-container {
+                padding: 30px 20px;
+            }
+
+            .contact-container h2 {
+                font-size: 28px;
+            }
+
+            .contact-container p.description {
+                font-size: 14px;
+            }
+
+            .contact-container input,
+            .contact-container textarea {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Offer Box-->
+    <div class="offer-box">
+        <p>Sign Up and<b style="color: rgb(255, 6, 6);"> Get 20% OFF </b>for your first Order</p>
+        <p id="click-button"><b style="color: rgb(221, 220, 220);">X</b></p>
+    </div>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo image" height="50px" width="50px">
+            <h1>StyleHive</h1>
+        </div>
+        <div class="menu-bar">
+            <!-- <ion-icon name="menu" id="click"></ion-icon> -->
+            <i class="fa-solid fa-bars fa-xl" id="click" style="color: #000000;"></i>
+            <div class="menu-popup">
+                <h2 id="remove">X</h2>
+                <div id="menu">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#new-arrival">New Arrival</a></p>
+                    <p><a href="#most-wanted">Most Wanted</a></p>
+                    <p><a href="collection.html">Collections</a></p>
+                    <p><a href="contact.html">Contect Us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#new-arrival">New Arrival</a></p>
+            <p><a href="#most-wanted">Most Wanted</a></p>
+            <p><a href="collection.html">Collections</a></p>
+            <p><a href="contact.html">Contect Us</a></p>
+        </div>
+    </div>
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <p class="description">We at <strong>StyleHive</strong> are always happy to hear from our fashion-forward
+                community! Drop us a message anytime.</p>
+            <form>
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="text" placeholder="Your Subject" required>
+                <textarea rows="5" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p><strong>Email:</strong> hello@stylehive.com</p>
+                <p><strong>Phone:</strong> +91 98765 12345</p>
+                <p><strong>Address:</strong> 22A, Hive Street, Coimbatore, Tamil Nadu</p>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

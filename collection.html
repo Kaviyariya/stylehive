@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHive</title>
+    <link rel="icon" href="./images/logo.png">
+    <!--Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--Emoji stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="offer-box">
+        <p>Sign Up and<b style="color: rgb(255, 6, 6);"> Get 20% OFF </b>for your first Order</p>
+        <p id="click-button"><b style="color: rgb(221, 220, 220);">X</b></p>
+    </div>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo image" height="50px" width="50px">
+            <h1>StyleHive</h1>
+        </div>
+        <div class="menu-bar">
+            <!-- <ion-icon name="menu" id="click"></ion-icon> -->
+            <i class="fa-solid fa-bars fa-xl" id="click" style="color: #000000;"></i>
+            <div class="menu-popup">
+                <h2 id="remove">X</h2>
+                <div id="menu">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#new-arrival">New Arrival</a></p>
+                    <p><a href="#most-wanted">Most Wanted</a></p>
+                    <p><a href="collection.html">Collections</a></p>
+                    <p><a href="contact.html">Contect Us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#new-arrival">New Arrival</a></p>
+            <p><a href="#most-wanted">Most Wanted</a></p>
+            <p><a href="collection.html">Collections</a></p>
+            <p><a href="contact.html">Contect Us</a></p>
+        </div>
+    </div>
+    <section class="main-section">
+        <!-- Sidebar Filters -->
+        <aside class="filters">
+            <h2>Occasion</h2>
+            <label><input type="checkbox" />Shirt</label>
+            <label><input type="checkbox" />Watch</label>
+            <label><input type="checkbox" />Shoe</label>
+
+            <h2>Colors</h2>
+            <label><input type="checkbox" />Red</label>
+            <label><input type="checkbox" />Blue</label>
+            <label><input type="checkbox" />White</label>
+            <label><input type="checkbox" />Green</label>
+
+            <h2>Arrivals</h2>
+            <label><input type="checkbox" />Old</label>
+            <label><input type="checkbox" />New</label>
+
+            <h2>Styling</h2>
+            <label><input type="checkbox" />Western </label>
+            <label><input type="checkbox" />Summer</label>
+        </aside>
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search" />
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./images/products/f1.jpg" alt="Floral Summer Shirt" />
+                    <h3>Floral Summer Shirt</h3>
+                    <p>$220</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f2.jpg" alt="Green Summer Shirt" />
+                    <h3>Green Summer Shirt</h3>
+                    <p>$260</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f3.jpg" alt="Party Floral Shirt" />
+                    <h3>Party Floral Shirt</h3>
+                    <p>$330</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f4.jpg" alt="Tropic Style Shirt" />
+                    <h3>Tropic Style Shirt</h3>
+                    <p>$210</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f5.jpg" alt="Palm Print Shirt" />
+                    <h3>Palm Print Shirt</h3>
+                    <p>$270</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f6.jpg" alt="Blue Casual Shirt" />
+                    <h3>Stylish Casual Shirt</h3>
+                    <p>$470</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f7.jpg" alt="Leaf Printed Shirt" />
+                    <h3>Leaf Printed Pant</h3>
+                    <p>$200</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/f8.jpg" alt="Yellow Floral Shirt" />
+                    <h3>Western Top</h3>
+                    <p>$400</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/n1.jpg" alt="Men’s Stylish Shirt" />
+                    <h3>Stylish Blue Shirt</h3>
+                    <p>$370</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/n2.jpg" alt="Slim Fit Shirt" />
+                    <h3>Slim Fit Shirt</h3>
+                    <p>$430</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/watches/1.jpg" alt="Luxury Gold Watch" />
+                    <h3>Black Watch</h3>
+                    <p>$500</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/1.jpg" alt="Fashionable Western Dress" />
+                    <h3>Fashionable T-Shirt</h3>
+                    <p>$600</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/2.jpg" alt="Stylish Western Outfit" />
+                    <h3>Stylish sports shoe</h3>
+                    <p>$1000</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/watches/2.jpg" alt="Elegant Silver Watch" />
+                    <h3>Elegant Silver Watch</h3>
+                    <p>$770</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/n3.jpg" alt="White Formal Shirt" />
+                    <h3>White Formal Shirt</h3>
+                    <p>$500</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/n4.jpg" alt="Printed Formal Shirt" />
+                    <h3>Printed Formal Shirt</h3>
+                    <p>$440</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/n5.jpg" alt="Casual Cotton Shirt" />
+                    <h3>Casual Cotton Shirt</h3>
+                    <p>$370</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/products/n6.jpg" alt="Checked Shirt" />
+                    <h3>Casual Pant</h3>
+                    <p>$1070</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/3.jpg" alt="Red Western Dress" />
+                    <h3>Western side bag</h3>
+                    <p>$870</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/4.jpg" alt="One Piece Dress" />
+                    <h3>Sports Shoe</h3>
+                    <p>$1000</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/10.jpg" alt="Floral Dress" />
+                    <h3>Western Watch</h3>
+                    <p>$840</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/11.jpg" alt="Stylish Maxi Dress" />
+                    <h3>Stylish Hat</h3>
+                    <p>$270</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/12.jpg" alt="Trendy Summer Dress" />
+                    <h3>White Shoe</h3>
+                    <p>$320</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="./images/shop/9.jpg" alt="Western Casual Dress" />
+                    <h3>Western Casual Bag</h3>
+                    <p>$430</p>
+                    <button class="buy-btn">Buy</button>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
